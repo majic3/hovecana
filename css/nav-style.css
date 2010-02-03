@@ -1,0 +1,52 @@
+/*Gray Style*/
+.gray {
+    color: #FFFFFF;
+	background: #999;
+}
+
+.gray li { padding:5px 0 0 0}
+.gray a, .gray span {
+	background: #ccc url(../img/nav.png) no-repeat top left;
+	display:inline-block;
+    height: 24px;
+	line-height: 24px;
+
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+.gray a {
+    color: #EAF3F8;
+    text-decoration: none;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+	min-width:95px;
+    padding: 0 0 0 10px;
+}
+.gray span {
+	background-position:top right;
+	width:10px;
+	float:right;
+}
+.gray a:hover, .gray a.current:hover {
+    color: #fff;
+	background-color:#888;
+    background-position: middle left;
+}
+.gray a:hover span, .gray a.current:hover span {
+	background-color:#888;
+    background-position: middle right;
+}
+.gray a.current {
+    color: #fff;
+    background-color: #279;
+	background-position: bottom left;
+}
+.gray a.current span {
+    background-color: #279;
+	background-position: bottom right;
+}
+/* ---------------------- END Gray nav ---------------------- */

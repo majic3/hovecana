@@ -1,0 +1,4 @@
+.debug li{ background:#822}
+.debug li+li{ background:#844}
+.debug li+li+li{ background:#866}
+.debug li+li+li+li{ background:#888}
