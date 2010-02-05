@@ -2,148 +2,159 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-        <title>Novacana</title>
-		<link rel="stylesheet" type="text/css" href="./css/nav.css" media="all" />
-		<style>
-/*Reset*/ * {
-    list-style: none;
-	padding:0;
-	margin:0;
-}
-
-ul {
-    list-style-type: none;
-    width: auto;
-    float: left;
-}
-
-/*Gray Style*/
-.gray {
-    color: #FFFFFF;
-	background: #999;
-}
-ul.gray.hor { padding:0 1%;
-	width:98%;
-}
-.gray.ver ul {
-	right:-120px;
-	top:0;
-}
-
-.gray li { padding:.5em .25em}
-.gray a { min-width:95px;
-	display:inline-block;
-	background: #ccc url(./img/nav.png) no-repeat top left;
-	
-    color: #EAF3F8;
-    text-decoration: none;
-    font-family: Helvetica, Arial, Verdana, sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    padding: 0 10px;
-    height: 24px;
-	line-height: 24px;
-
-	border-radius:6px;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-}
-.gray span {
-	display:inline-block;
-	background: transparent url(./img/nav.png) repeat-x top right;
-	width:10px;
-	height:24px;
-	line-height:24px;
-}
-.gray a:hover, .gray a.current:hover {
-    color: #fff;
-	background-color:#888;
-    background-position: middle left;
-}
-
-.gray a.current {
-    color: #fff;
-    background-color: #279;
-	background-position: bottom left;
-}
-
-.gray a.current span {
-    /background-color: #279;
-	background-position: bottom right;
-}
-
-/* ---------------------- END Dolphin nav ---------------------- */
-		</style>
-   </head>
+        <title>Hovecana</title>
+        <link rel="stylesheet" type="text/css" href="./css/nav.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="./css/nav-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="./css/nav-debug.css" media="all" />
+        <style>
+            /*Reset*/ * {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            ul {
+                list-style-type: none;
+                width: auto;
+                float: left;
+            }
+            
+            /*100% nav width*/
+            ul.nav.hor {
+                padding: 0 1% 5px 1%;
+                width: 98%;
+            }
+        </style>
+    </head>
     <body>
-		<div id="doc">
-			<div id="hd">
-				<h1>Novacana</h1>
-				<p>Horisontal and Vertical Cascaded Navigation</p>
-				<ul class="gray hor nav">
-					<li><a href="#">1. a<span>&nbsp;</span></a>
-						<ul>
-							<li><a href="#">1. b<span>&nbsp;</span></a></li>
-							<li><a href="#">1. bb<span>&nbsp;</span></a>
-								<ul>
-									<li><a href="#">1. c<span>&nbsp;</span></a></li>
-									<li><a href="#">1. cc<span>&nbsp;</span></a></li>
-									<li><a href="#">1. ccc<span>&nbsp;</span></a></li>
-								</ul>
-							</li>
-							<li><a href="#">1. bbb<span>&nbsp;</span></a>
-								<ul>
-									<li><a href="#">1. d<span>&nbsp;</span></a></li>
-									<li><a href="#">1. dd<span>&nbsp;</span></a></li>
-									<li><a href="#">1. ddd<span>&nbsp;</span></a></li>
-								</ul>
-							</li>
-							<li><a href="#">1. bbbb<span>&nbsp;</span></a></li>
-						</ul>
-					</li>
-					<li><a href="#" class="current">2. aaa<span>&nbsp;</span></a>
-						<ul>
-							<li><a href="#">2. b<span>&nbsp;</span></a></li>
-							<li><a href="#">2. bb<span>&nbsp;</span></a>
-								<ul>
-									<li><a href="#">2. c<span>&nbsp;</span></a></li>
-									<li><a href="#" class="current">2. cc<span>&nbsp;</span></a></li>
-									<li><a href="#">2. ccc<span>&nbsp;</span></a></li>
-								</ul>
-							</li>
-							<li><a href="#">2. bbb<span>&nbsp;</span></a>
-								<ul>
-									<li><a href="#">2. d<span>&nbsp;</span></a></li>
-									<li><a href="#">2. dd<span>&nbsp;</span></a></li>
-									<li><a href="#" class="current">2. ddd<span>&nbsp;</span></a></li>
-								</ul>
-							</li>
-							<li><a href="#">2. bbbb<span>&nbsp;</span></a></li>
-						</ul>
-					</li> 
-					<li><a href="#">3. aaa<span>&nbsp;</span></a></li>
-				</ul>
-			</div>
-			<div id="bd">
-				<h3>About</h3>
-				<p>Cascaded StyleSheet for horisontal and vertical navigation menus or tabs. Not depended on content ("Uordered List" tag only)</p>
-				<h4>Stilesheet</h4>
-				<pre><code>
-.nav{position:relative;display:inline}
-.nav .ver {display:block;right:-100%;top:0}
-.nav .hor {width:100%}
-.hor li{display:inline-block}
+        <div id="doc">
+            <div id="hd">
+                <h1>Hovecana</h1>
+                <p>
+                    Horisontal and Vertical Cascaded Navigation
+                </p>
+                <ul class="gray nav hor">
+                    <li>
+                        <a href="#">1. a<span>&nbsp;</span></a>
+                        <ul class="hor">
+                            <li>
+                                <a href="#">1. b<span>&nbsp;</span></a>
+                            </li>
+                            <li>
+                                <a href="#">1. bb<span>&nbsp;</span></a>
+                                <ul class="ver">
+                                    <li>
+                                        <a href="#">1. c<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1. cc<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1. ccc<span>&nbsp;</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">1. bbb<span>&nbsp;</span></a>
+                                <ul class="hor">
+                                    <li>
+                                        <a href="#">1. d<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1. dd<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1. ddd<span>&nbsp;</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">1. bbbb<span>&nbsp;</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="current">2. aaa<span>&nbsp;</span></a>
+                        <ul class="ver">
+                            <li>
+                                <a href="#">2. b<span>&nbsp;</span></a>
+                            </li>
+                            <li>
+                                <a href="#">2. bb<span>&nbsp;</span></a>
+                                <ul class="ver">
+                                    <li>
+                                        <a href="#">2. c<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="current">2. cc<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2. ccc<span>&nbsp;</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">2. bbb<span>&nbsp;</span></a>
+                                <ul class="hor">
+                                    <li>
+                                        <a href="#">2. d<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2. dd<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="current">2. ddd<span>&nbsp;</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">2. bbbb<span>&nbsp;</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">3. aaa<span>&nbsp;</span></a>
+                        <ul>
+                            <li>
+                                <a href="#">3. b<span>&nbsp;</span></a>
+                            </li>
+                            <li>
+                                <a href="#">3. bb<span>&nbsp;</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="#">3. c<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="current">2. cc<span>&nbsp;</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3. ccc<span>&nbsp;</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="bd">
+                <h3>About</h3>
+                <p>
+                    Cascaded StyleSheet for horisontal and vertical navigation menus or tabs. Not depended on content ("Uordered List" tag only)
+                </p>
+                <h4>Stylesheet</h4>
+                <pre><code>
+.ver ul {right:-100%;top:0}
+.nav ul{visibility:hidden;display:none}
 
-.nav ul{visibility:hidden}
 .nav li:hover>ul,.nav li:hover{visibility:visible}
+.nav li:hover>.hor,.hor li{display:inline-block}
+.nav li:hover>.ver,.ver li{display:block}
 
-.nav li>ul{position:absolute}
-.nav li>ul>li{position:relative}
+ul.nav,.hor ul>li,.ver ul>li{position:relative}
+.nav ul.hor, .nav ul.ver{position:absolute}
 				</code></pre>
-				<h4>Markup</h4>
-				<pre><textarea>
+                <h4>Markup</h4>
+                <pre><textarea>
 <ul id="nav" class="hor nav">
 	<li><a></a></li>
 	<li>
@@ -156,7 +167,7 @@ ul.gray.hor { padding:0 1%;
 	<li><a></a></li>
 </ul>
 				</textarea></pre>
-			</div>
-		</div>
-	</body>
-	</html>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,10 +1,9 @@
-.nav{position:relative;display:inline}
-.nav .ver {display:block;right:-100%;top:0}
-.nav .hor {width:100%}
-.hor li{display:inline-block}
+.ver ul {right:-100%;top:0}
+.nav ul{visibility:hidden;display:none}
 
-.nav ul{visibility:hidden}
 .nav li:hover>ul,.nav li:hover{visibility:visible}
+.nav li:hover>.hor,.hor li,ul.nav{display:inline-block}
+.nav li:hover>.ver,.ver li{display:block}
 
-.nav li>ul{position:absolute}
-.nav li>ul>li{position:relative}
+ul.nav,.nav ul>li{position:relative}
+.nav ul{position:absolute}
