@@ -1,9 +1,16 @@
 .ver ul {right:-100%;top:0}
 .nav ul{visibility:hidden;display:none}
 
-.nav li:hover>ul,.nav li:hover{visibility:visible}
+.nav li:hover>ul,.nav li:hover{visibility:visible;margin-left: 0}
 .nav li:hover>.hor,.hor li,ul.nav{display:inline-block}
 .nav li:hover>.ver,.ver li{display:block}
 
 ul.nav,.nav ul>li{position:relative}
 .nav ul{position:absolute}
+
+.nav li:hover>.hor{display:block;}
+
+.tree ul {height: auto; visibility:visible;display:block}
+.tree li,
+.tree li li { float: none; display: block}
+.tree li ul { position: static; margin-left: 1.2em; }

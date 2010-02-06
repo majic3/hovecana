@@ -50,3 +50,13 @@
 	background-position: bottom right;
 }
 /* ---------------------- END Gray nav ---------------------- */
+
+/* ---------------------- BEGIN Blue nav ---------------------- */
+
+.blue {
+    color: #BB88DD;
+	background: #EE77DD;
+}
+
+
+/* ---------------------- END Blue nav ---------------------- */

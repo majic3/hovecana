@@ -3,20 +3,10 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <title>Hovecana</title>
+        <link rel="stylesheet" type="text/css" href="./css/oocss.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="./css/nav.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="./css/nav-style.css" media="screen" />
-        <style>
-            /*Reset*/ * {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-            
-            ul {
-                list-style-type: none;
-                width: auto;
-                float: left;
-            }
+        <style type="text/css">
             
             /*100% nav width*/
             ul.nav.hor {
@@ -32,12 +22,12 @@
     </head>
     <body>
         <div id="doc">
-            <div id="hd">
+            <div id="hd" id="head">
                 <h1>Hovecana</h1>
                 <p>
-                    Horisontal and Vertical Cascaded Navigation
+                    Horizontal and Vertical Cascaded Navigation
                 </p>
-                <ul class="gray nav hor">
+                <ul class="debug gray nav hor">
                     <li>
                         <a href="#">1. a<span>&nbsp;</span></a>
                         <ul class="hor">
@@ -140,10 +130,83 @@
                     </li>
                 </ul>
             </div>
-            <div id="bd">
+            <div id="bd" id="body">
+				<div class="rightCol">
+<ul id="documentation" class="gray ver nav">
+	<li><a>outline</a></li>
+	<li>
+		<a>subthingy</a>
+		<ul class="ver nav">
+			<li><a>another thing</a></li>
+			<li><a>some another thing</a></li>
+		</ul>
+	</li>
+	<li><a>one last thing</a></li>
+</ul>
+<hr />
+<ul id="tree" class="blue tree nav">
+	<li><a>outline</a></li>
+	<li>
+		<a>subthingy</a>
+		<ul>
+			<li><a>another thing</a></li>
+			<li><a>some another thing</a></li>
+			<li><a>another thing</a></li>
+			<li><a>some another thing</a></li>
+		</ul>
+	</li>
+	<li>
+		<a>subthingy</a>
+		<ul>
+			<li><a>another thing</a></li>
+			<li><a>some another thing</a></li>
+			<li>
+				<a>another thing</a>
+				<ul>
+				<li>
+					<a>subthingy</a>
+					<ul>
+						<li><a>another thing</a></li>
+						<li><a>some another thing</a></li>
+						<li><a>another thing</a></li>
+						<li><a>some another thing</a></li>
+					</ul>
+				</li>
+				<li>
+					<a>subthingy</a>
+					<ul>
+						<li><a>another thing</a></li>
+						<li><a>some another thing</a></li>
+						<li><a>another thing</a></li>
+						<li><a>some another thing</a></li>
+					</ul>
+				</li>
+				</ul>
+			</li>
+			<li><a>some another thing</a></li>
+			<li><a>another thing</a></li>
+			<li><a>some another thing</a></li>
+			<li><a>another thing</a></li>
+			<li><a>some another thing</a></li>
+			<li><a>another thing</a></li>
+			<li><a>some another thing</a></li>
+		</ul>
+	</li>
+	<li><a>one last thing</a></li>
+</ul>
+				</div>
+				<div class="main">
                 <h3>About</h3>
                 <p>
                     Cascaded StyleSheet for horisontal and vertical navigation menus or tabs. Not depended on content ("Uordered List" tag only)
+                </p>
+                <p>
+                    The aim of this changes to this fork is to make a range of nav systems for use with OOCSS
+                </p>
+                <p>
+                    The styles are arranged in skins (by color) and by base styles by name. 
+
+					These are then applied to mark up using multiple classes.  The eventual plan is to use this with OOCSS and tools like compass to create a really tight output/final css fr use with a site - at this stage your defining some rules in place of the skin rules (applying your skin) and applying the final styles to you code how you want to - Your semantic styles for your code - no excess rules neat compact (no-redundant) clean set of rules
                 </p>
                 <h4>Stylesheet</h4>
                 <pre><code>
@@ -171,20 +234,9 @@ ul.nav,.hor ul>li,.ver ul>li{position:relative}
 	<li><a></a></li>
 </ul>
 				</textarea></pre>
-
-				<hr />
-				
-<ul id="documentation" class="gray ver nav">
-	<li><a>outline</a></li>
-	<li>
-		<a>subthingy</a>
-		<ul class="ver nav">
-			<li><a>another thing</a></li>
-			<li><a>some another thing</a></li>
-		</ul>
-	</li>
-	<li><a>one last thing</a></li>
-</ul>
+            </div>
+            </div>
+            <div id="ft" class="foot">
             </div>
         </div>
     </body>
